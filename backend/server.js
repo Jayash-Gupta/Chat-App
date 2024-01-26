@@ -50,6 +50,8 @@ app.use(errorHandler);
 //   console.log(`Server running on PORT ${PORT}...`.yellow.bold)
 // );
 
+const server = "https://chat-server-yo7d.onrender.com";
+
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
